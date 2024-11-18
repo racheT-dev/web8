@@ -1,0 +1,111 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*  шапка */
+.header {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.head {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu ul {
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    display: flex;
+    margin-right: 0%;
+}
+
+.footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+}
+
+.main-menu a {
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.site-link a {
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* Стили для кнопки */
+.but {
+    background-color: #06ca48;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Стили для попапа */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.active {
+    display: flex;
+}
+
+/* Стили для формы */
+.popup form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.close-button {
+    margin: 0 0 0 auto;
+}
+
+.popup form input,
+.popup form textarea,
+.popup form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.popup form .checkbox-label {
+    display: flex;
+    align-items: center;
+}
