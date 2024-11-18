@@ -17,7 +17,8 @@ body {
 .header-content {
     max-width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .main-menu ul {
@@ -26,6 +27,7 @@ body {
     list-style-type: none;
     display: flex;
     margin-right: 0%;
+    justify-content: flex-end;
 }
 
 .footer {
@@ -53,11 +55,13 @@ body {
 
 /* Стили для кнопки */
 .but {
+    left: calc(50% - 100px);
+    position: relative;
     background-color: #06ca48;
     border: none;
     color: white;
     padding: 15px 32px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
